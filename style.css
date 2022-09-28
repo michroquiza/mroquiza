@@ -1,0 +1,279 @@
+:root {
+  --lightblue: #BBE1FA;
+  --blue: #3282B8;
+  --darkblue: #0F4C75;
+  --background: #222831;
+  --grayishblue: #2D3543;
+  --lightgray: #8098a8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222831;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+/* 
+.box-bg {
+  width: 864px;
+  height: 148px;
+  background: #0F4C75;
+}
+
+.main-heading {
+  color: #BBE1FA;
+  font-size: 5.069rem;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 98.08px;
+
+} */
+
+.headings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-flow: column wrap;
+  margin: 0 auto;
+}
+
+.box-bg {
+  position: relative;
+}
+
+.main-heading-stroke {
+  color: var(--lightblue);
+  font-size: 4.768rem;
+  /* font-size: clamp(1.563rem, 10vw, 4.768rem); */
+  font-family: 'Fredoka One', cursive;
+  /* letter-spacing: 0.11em; */
+  text-transform: uppercase;
+  background: var(--darkblue);
+  padding: 25px 35px 25px 35px;
+  border-radius: 5px;
+  transform: rotate(-2.05deg);
+}
+
+.main-heading-container {
+  position: relative;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+/* .main-heading-text {
+  position: absolute;
+  color: #BBE1FA;
+  font-size: 4.768rem;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  top: -117px;
+  left: 35px;
+  transform: rotate(-2.05deg);
+} */
+
+.subheading {
+  color: var(--darkblue);
+  background: var(--lightblue);
+  font-size: 1.953rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 20px 30px 20px 30px;
+  border-radius: 5px;
+  -webkit-text-stroke: 1px #0F4C75;
+  transform: rotate(1.2deg);
+}
+
+@media (min-width:300px) and (max-width:499px) {
+  .main-heading-stroke {
+    font-size: 2rem;
+    padding: 15px 20px 15px 20px;
+
+  }
+
+  .subheading {
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+
+  }
+}
+
+
+@media (min-width:500px) and (max-width:624px) {
+  .main-heading-stroke {
+    font-size: 2.5rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width:625px) and (max-width:799px) {
+  .main-heading-stroke {
+    font-size: 3.1rem;
+  }
+
+  .subheading {
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width:800px) and (max-width:950px) {
+  .main-heading-stroke {
+    font-size: 4rem;
+  }
+
+  .subheading {
+    font-size: 1.65rem;
+  }
+}
+
+/* @media (max-width: 1056px) {
+
+  .main-heading-stroke {
+    font-size: clamp(1.563rem, 10vw, 4.768rem);
+  }
+
+  .subheading {
+    font-size: clamp(0.8rem, 5vw, 1.953rem);
+
+  }
+} */
+
+/* .main-container {
+  margin: 112px 200px 0 200px;
+} */
+
+.small-heading {
+  color: var(--lightblue);
+  font-size: 3.052rem;
+  font-weight: 400;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.projects-container {
+  margin: 0 190px 0 190px;
+}
+
+@media (max-width:1179px) {
+
+  .projects-container {
+    margin: 0 100px 0 100px;
+  }
+}
+
+@media (max-width:600px) {
+
+  .projects-container {
+    margin: 0 70px 0 70px;
+  }
+}
+
+.project-cards {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--grayishblue);
+  color: var(--lightblue);
+  border-radius: 5px;
+}
+
+.project-image {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: block;
+  max-width: 100%;
+}
+
+.project-title {
+  padding: 1.5em 0;
+  margin: 0 1.2em;
+  text-align: center;
+}
+
+.project-links {
+  padding: 0 2.5em 1em 2.5em;
+}
+
+.mg-bt {
+  margin-bottom: 1em;
+}
+
+.project-link {
+  display: block;
+  color: var(--blue);
+  outline: 2px solid #3282B8;
+  padding: 1em 1em 1em 1em;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.about {
+  margin: 7em 80px 0 80px;
+}
+
+.about-content {
+  color: var(--lightgray);
+  font-size: 1.331rem;
+  line-height: 1.4;
+}
+
+@media(max-width: 750px) {
+  .about-content {
+    margin: 0 0px 0 0px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width:751px) and (max-width: 850px) {
+  .about-content {
+    margin: 0 50px 0 50px;
+  }
+}
+
+@media(min-width:851px) and (max-width: 1000px) {
+  .about-content {
+    margin: 0 100px 0 100px;
+  }
+}
+
+@media(min-width:1001px) {
+  .about-content {
+    margin: 0 180px 0 180px;
+  }
+}
+
+
+footer {
+  text-align: center;
+  margin: 5em 0 2em 0;
+}
+
+.icons {
+  margin-top: 0.5em;
+}
+
+.github {
+  margin-right: -1.9px;
+}
